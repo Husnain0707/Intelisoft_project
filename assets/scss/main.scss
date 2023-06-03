@@ -1,0 +1,59 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "variables";
+@import "header";
+@import "banner";
+@import "home";
+@import "footer";
+
+
+@font-face {
+    font-family: "Neo Sans Std";
+    src: url(../fonts/neo-sans-std/Neo\ Sans\ Std\ Regular.otf);
+}
+
+@font-face {
+    font-family: "Neo Sans Std bold";
+    src: url(../fonts/neo-sans-std/Neo\ Sans\ Std\ Bold.otf);
+}
+
+@font-face {
+    font-family: "Neo Sans Std light";
+    src: url(../fonts/neo-sans-std/Neo\ Sans\ Std\ Light.otf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Neo Sans Std";
+
+    &::after {
+        box-sizing: border-box;
+    }
+
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0 !important;
+}

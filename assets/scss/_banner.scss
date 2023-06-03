@@ -1,0 +1,83 @@
+.carousel {
+    .carousel-inner {
+        .caption-main {
+            position: relative;
+            .carousel-caption {
+                max-width: 538px;
+                left: 0;
+                bottom: 35px !important;
+                transform: translateY(-50%);
+                text-align: left;
+                padding-bottom: 0;
+                @include media-breakpoint-between(md, lg) {
+                    max-width: 350px;
+                }
+                @include media-breakpoint-up(xxl) {
+                    bottom: 63px !important;
+                }
+    
+                .banner-heading {
+                    font-size: 65px;
+                    font-weight: $font700;
+                    line-height: normal;
+                    font-family: "Neo Sans Std bold";
+                    @include media-breakpoint-between(md, lg) {
+                        font-size: 36px;
+                    }
+                }
+    
+                .banner-text {
+                    font-size: 38px;
+                    font-weight: $font300;
+                    line-height: normal;
+                    opacity: 0.8;
+                    padding-right: 100px;
+                    margin-top: 26px;
+                    // font-family: "Neo Sans Std light";
+                    @include media-breakpoint-between(md, lg) {
+                        font-size: 30px;
+                        margin-top: 15px;
+                        padding-right: 40px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .carousel-control-prev {
+        opacity: 1;
+        width: 7%;
+        @include media-breakpoint-down(md) {
+            top: 20px;
+        }
+    }
+    .carousel-control-next {
+        opacity: 1;
+        width: 7%;
+        @include media-breakpoint-down(md) {
+            top: 20px;
+        }
+    }
+    .carousel-indicators {
+        display: unset;
+        margin-left: 0;
+        top: 72%;
+        left: 100px;
+        @include media-breakpoint-up(xxl) {
+            top: 72%;
+            left: 90px;
+        }
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+        @include media-breakpoint-between(md, lg) {
+            top: 78%;
+        }
+        button {
+            width: 38px;
+            height: 6px;
+            border-radius: 3px;
+            border: 0;
+        }
+    }
+}
